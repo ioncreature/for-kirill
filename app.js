@@ -22,3 +22,8 @@ process.title = config.processTitle;
 registry.set( 'config', config );
 
 require( './lib/webServer' );
+
+// check folders
+var fs = require( 'fs' );
+fs.mkdir( config.uploadsDir, util.noop );
+fs.mkdir( config.downloadDir, util.noop );
