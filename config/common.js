@@ -12,5 +12,7 @@ exports.route = {
     PUBLIC: '/public',
     PUBLIC_CSS: '/public/css',
     INDEX: '/',
-    FORM: '/form'
+    FORM: '/form',
+    DIRECTORY: '/directory/:folder',
+    IMAGE: '/public/download/:folder/:file'
 };

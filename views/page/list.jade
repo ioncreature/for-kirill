@@ -8,10 +8,9 @@ block content
         table.table.table-striped.table-hover
             tr
                 th Name
-                th URL
                 th Create date
             each item in list
                 tr
-                    td= item
-                    td -
-                    td -
+                    td
+                        a(href=item.url)= item.name
+                    td= item.create

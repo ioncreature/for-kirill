@@ -9,23 +9,29 @@ block scripts
 block content
     form(role='form', method='POST', action=postUrl)
         .row
-            .col-md-6
+            .col-md-7
                 h3 XML
                 .form-group#input-big-xml
                     textarea#big-xml.form-control(rows=25)
-            .col-md-6
+            .col-md-5
                 h3 Config
                 .checkbox
                     label
                         input(type='checkbox', name='checkbox1')
-                        | First checkbox
+                        | Front
                 .checkbox
                     label
                         input(type='checkbox', name='checkbox1')
-                        | Second checkbox
+                        | Back
                 .form-group
-                    label(for='issuer-address') Address
-                    input#issuer-address.form-control(type='text', name='address', value=address)
+                    label(for='rotate-x') Rotate X
+                    input#rotate-x.form-control(type='number', name='rotateX', value=0)
+                .form-group
+                    label(for='rotate-y') Rotate Y
+                    input#rotate-y.form-control(type='number', name='rotateY', value=0)
+                .form-group
+                    label(for='rotate-z') Rotate Z
+                    input#rotate-z.form-control(type='number', name='rotateZ', value=0)
 
                 h3 Files
                 .form-group
@@ -36,6 +42,8 @@ block content
                     input(type='file', name='file3')
                 .form-group
                     input(type='file', name='file4')
+                .form-group
+                    input(type='file', name='file5')
 
         .row
             .col-md-12.center.offset-top

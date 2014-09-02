@@ -1,0 +1,9 @@
+// @author Alexander Marenin
+// @date September 2014
+
+extends ../layout
+
+block content
+    each url in files
+        a.thumbnail(href=url)
+            img(src=url)
