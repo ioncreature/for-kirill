@@ -1,0 +1,8 @@
+{
+    "name": "for-kirill",
+    "private": true,
+    "dependencies": {
+        "jquery": "2.1.x",
+        "bootstrap": "3.2.x"
+    }
+}

@@ -1,0 +1,17 @@
+// @author Alexander Marenin
+// @date July 2014
+
+extends ../layout
+
+block content
+    .table-responsive
+        table.table.table-striped.table-hover
+            tr
+                th Name
+                th URL
+                th Create date
+            each item in list
+                tr
+                    td= item
+                    td -
+                    td -
